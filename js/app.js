@@ -1,0 +1,1 @@
+var polygonApp = angular.module('polygonApp', []);

@@ -1,0 +1,35 @@
+{
+  "name": "fabricjs-click-draw-polygon",
+  "version": "1.0.0",
+  "description": "Click drawing polygon tool comes with undo/redo feature",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crucified713/fabricjs-click-draw-polygon.git"
+  },
+  "keywords": [
+    "fabricjs",
+    "draw",
+    "polygon",
+    "click",
+    "undo",
+    "redo"
+  ],
+  "author": "Mike Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crucified713/fabricjs-click-draw-polygon/issues"
+  },
+  "homepage": "https://github.com/crucified713/fabricjs-click-draw-polygon#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "fabric": "1.6.3",
+    "gulp": "^3.9.1",
+    "sweetalert": "^1.1.3",
+    "underscore": "^1.8.3"
+  }
+}

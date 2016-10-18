@@ -1,0 +1,16 @@
+#drawing-tool {
+    width: 100%;
+    height: 100%;
+}
+
+#canvas-content {
+    border: 4px solid #333;
+    border-top: none;
+}
+
+#drawing-tool-topbar {
+    background-color: #2f8e92;
+    width: 100%;
+    height: 56px;
+    padding: 10px 20px;
+}

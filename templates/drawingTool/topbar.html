@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="col-sm-5">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Image filename(Optional)" ng-model="drawPolygon.fileName">
+			<span class="input-group-btn">
+        <button class="btn btn-success" ng-click="savePolygonImage()" title="Save image to the server">Save</button>
+      </span>
+		</div>
+	</div>
+	<div class="col-sm-5">
+		<div class="btn-group">
+			<a class="btn btn-default" ng-click="resetDrawingPolygon()" title="Reset the current canvas">Reset</a>
+			<a class="btn btn-default" ng-click="undoDrawingPolygon()" title="Undo (Ctrl + Z)">Undo</a>
+			<a class="btn btn-default" ng-click="redoDrawingPolygon()" title="Redo (Ctrl + Y)">Redo</a>
+			<a class="btn btn-default btn-danger" ng-click="exitDrawingPolygon()" title="Exit the canvas">Exit</a>
+		</div>
+	</div>
+	<!--<p><small>* Cancel out of creating a shape by pressing ESCAPE key</small></p>
+		<p><small>* Complete a shape by double clicking or by clicking on the original starting point</small></p>-->
+</div>

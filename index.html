@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="polygonApp">
+
+<head>
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Drawing Polygon</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="node_modules/sweetalert/dist/sweetalert.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/drawingTool/style.css">
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/underscore/underscore-min.js"></script>
+	<script src="node_modules/fabric/dist/fabric.js"></script>
+	<script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/factories/Command.js"></script>
+	<script src="js/services/DrawPolygon.js"></script>
+	<script src="js/controllers/DrawingController.js"></script>
+</head>
+
+<body ng-controller="DrawingController">
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Polygon Drawing Tool</h1>
+			<p>A click drawing polygon tool powered by Fabric.js. It also comes with undo/redo feature utilising Command pattern.</p>
+			<p><a class="btn btn-primary btn-lg" ng-click="openDrawingTool()" role="button" ng-if="!drawingPolygonMode">Start Drawing</a></p>
+		</div>
+	</div>
+	<div id="drawing-tool" ng-hide="!drawingPolygonMode" ng-cloak>
+		<div class="display-container">
+			<div id="drawing-tool-topbar" ng-include="'templates/drawingTool/topbar.html'"></div>
+			<div id="drawing-tool-canvas" ng-include="'templates/drawingTool/canvas.html'"></div>
+		</div>
+	</div>
+</body>
+
+</html>
