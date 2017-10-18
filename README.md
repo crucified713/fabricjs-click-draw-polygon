@@ -1,6 +1,6 @@
 fabricjs-draw-polygon
 ==========
-This is a **click drawing** polygon tool with **undo/redo** features. 
+This is a **polygon drawing tool** with **undo/redo** features implementing Command Design Pattern. 
 
 
 Usage
@@ -33,8 +33,8 @@ Feature:
 
 1. A polygon drawing tool powered by [Fabric.js](https://github.com/kangax/fabric.js/).
 
-2. Click drawing single/multiple polygon within canvas, nice and easy.
+2. Click drawing single/multiple polygons within canvas, nice and easy.
 
-3. Provide undo/redo features utilising Command Pattern which guaranteed the better performance.
+3. Provide undo/redo features utilising Command Pattern.
 
-4. A small but well structured AngularJS project allows you to easily chuck more stuff to build a more interesting tool.
+4. An AngularJS project allows you to easily chuck more stuff to build a more interesting tool.
